@@ -2,16 +2,19 @@ package main
 
 import (
 	"fmt"
-	ds "interview_practice/tasks/datastructures"
+	ds "interview_practice/datastructures"
 )
 
 func main() {
-	l := &ds.LinkedList{}
-	input := []int{6, 3, 2, 1, 5, 4, 9, 8, 7, 10}
-	for x := range input {
-		l.Append(x)
-	}
-	fmt.Println(l.ToString())
-	ds.ReverseList2(&l.Head)
-	fmt.Println(l.ToString())
+	arr := []int{6, 4, 5, 2, 1, 8, 2, 9, 7, 10, 3}
+	fmt.Println(arr)
+	t := ds.BinarySearchTree(arr)
+	// t := ds.LevelOrderBinaryTree(arr)
+	fmt.Println("preOrder: ", t.ToString("preOrder"))
+	fmt.Println("inOrder: ", t.ToString("inOrder"))
+	fmt.Println("postOrder: ", t.ToString("postOrder"))
+	fmt.Println("levelOrder: ", t.ToString("levelOrder"))
+	fmt.Println()
+
+	fmt.Println(ds.SumOfAllNodes(t))
 }
