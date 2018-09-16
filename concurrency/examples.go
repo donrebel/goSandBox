@@ -1,4 +1,4 @@
-package concurency
+package concurrency
 
 import (
 	"fmt"

@@ -1,4 +1,4 @@
-package tasks
+package datastructures
 
 // ArSum ...
 func ArSum(ar []int) int {
