@@ -220,3 +220,11 @@ func GeneralizedBucketSort(s []string, lowerRangeBound byte, upperRangeBound byt
 		}
 	}
 }
+
+// HeapSort ...
+func HeapSort(a []int) {
+	h := ds.NewHeap(a, true)
+	for i := 0; i < len(a); i++ {
+		a[i], _ = h.Remove()
+	}
+}
