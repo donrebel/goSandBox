@@ -1,5 +1,9 @@
 package algorithms
 
+import (
+	ds "interview_practice/datastructures"
+)
+
 //More ...
 func More(a int, b int) bool {
 	return a > b

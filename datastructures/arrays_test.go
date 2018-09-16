@@ -1,4 +1,4 @@
-package tasks
+package datastructures
 
 import (
 	"testing"
@@ -11,10 +11,10 @@ func Test1(t *testing.T) {
 	assert.Equal(t, ArSum(ar), 45)
 }
 
-func Test2(t *testing.T) {
-	ar := []int{1, 2, 3, 4, 6, 7, 8, 9}
-	assert.Equal(t, BinarySearchRec(ar, 5), false)
-}
+// func Test2(t *testing.T) {
+// 	ar := []int{1, 2, 3, 4, 6, 7, 8, 9}
+// 	assert.Equal(t, BinarySearchRec(ar, 5), false)
+// }
 
 func Test3(t *testing.T) {
 	ar := []int{1, 2, 3, 4, 6, 7, 8, 9}
