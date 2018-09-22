@@ -2,7 +2,7 @@ package concepts
 
 import (
 	"fmt"
-	ds "interview_practice/tasks/datastructures"
+	ds "interview_practice/datastructures"
 )
 
 // Smartphone ...
